@@ -1,0 +1,36 @@
+---
+title: "Introduction to Quarto"
+format: html
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+Markdown formatting
+
+# header 1
+
+## header 2
+
+###### header 6
+
+*italic text*
+
+**bold text**
+
+**my ordered list** 1. one 2. two 3. three + 3A + 3B + 3C
+
+# Block quote
+
+Here is the quote intro 
+> I took the road less traveled  
+> And that has made all the distance
+
+# Table here
+
+| Col1  | Col2    |
+|-------|---------|
+| hi    | bye     |
+| hello | goodbye |
+
+

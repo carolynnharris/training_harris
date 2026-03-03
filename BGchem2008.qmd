@@ -1,0 +1,69 @@
+---
+title: "Introduction to Quarto"
+format: html
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# 1. Intro
+
+### a. about the data 
+
+- Water samples from the Arctic Ocean
+- Data downloaded from the Arctic Data Center: [Tweedie ADC dataset](https://arcticdata.io/catalog/view/doi:10.18739/A25T3FZ8X)
+
+### b. setup
+
+```{r}
+#| warning: false
+library(readr)
+library(ggplot2)
+library(here)
+```
+
+
+
+### c. read in data 
+
+```{r}
+#| warning: false
+bg_chem <- read_csv(here("data/BGchem2008data.csv"))
+```
+
+
+# 2. Analysis
+
+### a. summary stats
+
+```{r}
+#| eval: false
+#| echo: false
+
+# print col names
+colnames(bg_chem)
+
+# print data structure
+str(bg_chem)
+
+# show head (first 6 lines)
+head(bg_chem)
+
+
+# summary of each column
+summary(bg_chem)
+
+# unique values of data
+unique(bg_chem$Date)
+
+```
+
+
+
+### b. redfield ratio
+
+### c. plot redfield ratio
+
+### 3. conclusion
+
+
